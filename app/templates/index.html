@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Home - YouTube Summary App{% endblock %}
+
+{% block content %}
+    <form method="POST">
+        <label for="url">YouTube URL:</label>
+        <input type="text" id="url" name="url" required>
+        <button type="submit">Summarize!</button>
+    </form>
+{% endblock %}
