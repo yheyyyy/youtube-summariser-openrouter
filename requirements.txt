@@ -1,0 +1,6 @@
+youtube-transcript-api==0.6.3
+langchain-experimental==0.3.4
+langchain-huggingface==0.1.2
+flask==3.1.0
+openai==1.65.1
+markdown==3.7
