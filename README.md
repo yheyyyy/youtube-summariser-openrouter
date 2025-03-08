@@ -55,20 +55,34 @@ pip install -r requirements.txt
 ---
 ## Set Up OpenRouter API Key
 
-To use the OpenRouter API, you need to obtain an API key. Follow these steps:
-1. Go to the [OpenRouter API website](https://openrouter.ai/).
-2. Sign up or log in to your account.
-3. Navigate to the API keys section and generate a new API key.
-4. Copy the API key.
-5. Create a .env file in the root directory of the project:
-    ```bash
-    touch .env
-    ```
-6. Add your OpenRouter API key to the .env file:
-    ```bash
-    OPENROUTER_API_KEY=your_openrouter_api_key_here
-    ```
-Note: Do not share your API key publicly. Add .env to your .gitignore file to prevent it from being committed to version control.
+To use the OpenRouter API and Hugging Face, you need to obtain API keys. Follow these steps:
+
+1. **OpenRouter Setup:**
+   - Go to the [OpenRouter API website](https://openrouter.ai/)
+   - Sign up or log in to your account
+   - Navigate to the API keys section and generate a new API key
+   - Copy the API key
+
+2. **Hugging Face Setup:**
+   - Go to the [Hugging Face website](https://huggingface.co/)
+   - Sign up or log in to your account
+   - Navigate to Settings -> Access Tokens
+   - Create a new token with read access
+   - Copy the token
+
+3. **Environment Setup:**
+   Create a .env file in the root directory of the project:
+   ```bash
+   touch .env
+   ```
+
+4. **Add your API keys to the .env file:**
+   ```bash
+   OPENROUTER_API_KEY=your_openrouter_api_key_here
+   HF_TOKEN=your_huggingface_token_here
+   ```
+
+Note: Never commit your .env file to version control. The .gitignore file is already configured to exclude it.
 
 ---
 
